@@ -16,9 +16,6 @@ RUN npm install
 # Copy local code to the container image.
 COPY . ./
 
-# Set environment variable for Flask API URL
-ENV REACT_APP_FLASK_API=http://172.18.4.181:5000
-
 # Inform Docker that the container listens on the specified port at runtime.
 EXPOSE 3000
 
