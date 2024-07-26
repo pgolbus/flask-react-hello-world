@@ -19,6 +19,12 @@ COPY . ./
 # Inform Docker that the container listens on the specified port at runtime.
 EXPOSE 3000
 
+# Argument to accept environment variable at build time
+ARG REACT_APP_FLASK_API
+
+# Expose the environment variable to the application
+ENV REACT_APP_FLASK_API=$REACT_APP_FLASK_API
+
 # Build the React application.
 RUN npm run build
 

@@ -8,10 +8,15 @@ services:
       - FLASK_DEBUG=1
 
   react-app:
+<<<<<<< HEAD
     build: ./hello-world-react
+=======
+    build:
+      context: ./react
+      args:
+        REACT_APP_FLASK_API: http://flask-app:5000
+>>>>>>> 28d6faf (that worked a minute ago)
     ports:
       - "3000:3000"
-    environment:
-      - REACT_APP_FLASK_API=http://flask-app:5000
     depends_on:
       - flask-app

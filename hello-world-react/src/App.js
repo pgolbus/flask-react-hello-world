@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 
 const apiUrl = process.env.REACT_APP_FLASK_API;
+console.log("apiUrl: ", apiUrl);
 
 function App() {
   const [message, setMessage] = useState('');
