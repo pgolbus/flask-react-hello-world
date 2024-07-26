@@ -14,8 +14,12 @@ services:
     build:
       context: ./react
       args:
+<<<<<<< HEAD
         REACT_APP_FLASK_API: http://flask-app:5000
 >>>>>>> 28d6faf (that worked a minute ago)
+=======
+        REACT_APP_FLASK_API: http://172.18.4.181:5000
+>>>>>>> 56cc760 (that worked)
     ports:
       - "3000:3000"
     depends_on:
