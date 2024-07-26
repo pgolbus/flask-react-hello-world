@@ -12,6 +12,7 @@ services:
       context: ./react
       args:
         REACT_APP_FLASK_API: http://${FLOATING_IP}:5000
+    # image: flask-react-hello-world_react-app
     ports:
       - "3000:3000"
     depends_on:
